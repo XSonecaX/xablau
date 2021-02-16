@@ -1,0 +1,761 @@
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="WEB API">
+  <meta name="author" content="FERDIZ-afk">
+  <!--<base href="https://mhankbarbar.herokuapp.com">-->
+  <link href="https://indrijunanda.github.io/RuangAdmin/img/logo.png" rel="icon">
+  <link href="https://i.ibb.co/MpV3GHM/IMG-20201221-WA0107.jpg" rel="shortcut icon" type="image/png">
+  <title>MISTIC</title>
+  <link href="https://indrijunanda.github.io/RuangAdmin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://indrijunanda.github.io/RuangAdmin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="https://indrijunanda.github.io/RuangAdmin/css/ruang-admin.min.css" rel="stylesheet">
+  <meta property="og:title" content="ESTA API WEB REST MISTIC ">
+  <meta property="og:description" content="OLA PESSOAS">
+  <meta property="og:image" content="https://www.cloudways.com/blog/wp-content/uploads/Getting-Started-With-Magento-2-Rest-API-Banner.jpg">
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+  <audio autoplay="autoplay" hidden="hidden" src="https://b.top4top.io/m_1870z8kkr9.mp3"></audio>
+  <!--script>alert("API INI GRATIS BUAT LATIHAN");</script--> 
+  <!--salam pembuka njir-->
+  <!--script type="text/javascript">
+            name = prompt("NAMA KAMU SIAPA ? ")
+            if(name != null && name != "")
+            alert("HALLO KAK : "+name+"  SELAMAT DATANG DI WEB REST API PUNYA FERDIZ");
+            else 
+            alert("YAH NGAK TAU NAMANYA DEH")
+        </script-->
+</head>
+
+<body id="page-top">
+  <div id="wrapper" >
+    <!-- Sidebar -->
+    
+    <ul class="navbar-nav sidebar sidebar-light accordion bg-white" id="accordionSidebar" style="color:black;">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center bg-Success" style="color:white;">
+        <div class="sidebar-brand-icon">
+          <img src="https://avatars.githubusercontent.com/u/69185890?v=4">
+        </div>
+        <div class="sidebar-brand-text mx-3">MISTIC</div>  
+      </a>
+      <hr class="sidebar-divider my-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">
+          <i class="fas fa-fw fa-code"></i>
+          <span>Api Document</span></a>
+      </li>
+      <hr class="sidebar-divider">
+      <div class="sidebar-heading">
+        Features
+      </div>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
+          aria-expanded="true" aria-controls="collapseBootstrap">
+          <i class="fas fa-fw fa-arrow-down"></i>
+          <span>Sosmed API</span>
+        </a>
+        <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Sosmed Features</h6>
+            <!--a class="collapse-item" href="/api/epbe">Facebook  Get Video Link</a>
+            <a class="collapse-item" href="/api/ig">Instagram Get Video/ Photo Link</a-->
+            <a class="collapse-item" href="/api/ytv?url=https://youtu.be/6l5V3BWDcMw">Youtube Get Video Link</a>
+            <a class="collapse-item" href="/api/yta?url=https://youtu.be/6l5V3BWDcMw">Youtube Get Audio Link</a>
+            <!--a class="collapse-item" href="/api/yts">Youtube Search</a>
+            <a class="collapse-item" href="/api/twit">Twitter Get Video Link</a-->
+            <a class="collapse-item" href="/api/stalkig/user/name=ferdiz_afk">IG Stalker</a>
+            <a class="collapse-item" href="/api/stalkgithub/user/name=FERDIZ-afk">github stalk</a>
+            <!--a class="collapse-item" href="/api/twstalk">Twitter Stalker</a>
+            <a class="collapse-item" href="/api/xnxx">XnXx Get Video Link</a>
+            <a class="collapse-item" href="/api/mdl">Mediafire get download Link</a>
+            <a class="collapse-item" href="/api/tktd">TikTok Get Video Link</a-->
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm" aria-expanded="true"
+          aria-controls="collapseForm">
+          <i class="fas fa-fw fa-book"></i>
+          <span>Educational API</span>
+        </a>
+        <div id="collapseForm" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Educational Features</h6>
+            <a class="collapse-item" href="/api/wiki?q=kucing">Wikipedia API</a>
+            <a class="collapse-item" href="/api/translate?kata=ngak bisa bahasa Inggris">translate</a>
+            <a class="collapse-item" href="/api/chord?q=lungset">Search Chord Guitar</a>
+            <!--a class="collapse-item" href="/api/kbbi">KBBI API</a-->
+          </div>
+        </div>
+      </li>
+      <!--li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAnime" aria-expanded="true"
+          aria-controls="collapseAnime">
+          <i class="fas fa-fw fa-search"></i>
+          <span>Anime/Manga API</span>
+        </a>
+        <div id="collapseAnime" class="collapse" aria-labelledby="headingAnime" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Anime/Manga Features</h6>
+            <a class="collapse-item" href="/api/nhentai">Nhentai search/download doujin</a>
+            <a class="collapse-item" href="/api/dewabatch">Dewabatch Scraper</a>
+            <a class="collapse-item" href="/api/kuso">Kusonime Scraper</a>
+            <a class="collapse-item">Otakudesu Scraper [ MAIN ]</a>
+            <a class="collapse-item" href="/api/komiku">Komiku Scraper</a>
+            <a class="collapse-item" href="/api/nekopoi">Nekopoi Scraper</a>
+          </div>
+        </div>
+      </li-->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseRandom" aria-expanded="true"
+          aria-controls="collapseRandom">
+          <i class="fas fa-fw fa-bullseye"></i>
+          <span>Random API</span>
+        </a>
+        <div id="collapseRandom" class="collapse" aria-labelledby="headingRandom" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Random Features</h6>
+            <a class="collapse-item" href="/api/waifu">Random waifu</a>
+            <a class="collapse-item" href="/api/randomquotes">Random Quotes</a>
+            <a class="collapse-item" href="/api/quotesnime/random">Random Anime Quotes</a>
+            <a class="collapse-item" href="/api/dewasa">Random konten 18+</a>
+            <a class="collapse-item" href="/api/nekonime">Random Nekonime Images</a>
+            <a class="collapse-item" href="/api/anime/hentai">Random Hentai Images</a>
+            <!--a class="collapse-item" href="/api/random">Random Trap Images</a>
+            <a class="collapse-item" href="/api/random">Random NSFW Neko Images</a>
+            <a class="collapse-item" href="/api/random">Random Anime Wallpaper</a-->
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+      	<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseNulis" aria-expanded="true"
+      	  aria-controls="collapseNulis">
+      	  <i class="fas fa-fw fa-certificate"></i>
+      	  <span>Nulis API</span>
+      	</a>
+      <div id="collapseNulis" class="collapse" aria-labelledby="headingNulis" data-parent="#accordionSidebar">
+      	<div class="bg-white py-2 collapse-inner rounded">
+      	  <h6 class="collapse-header">Nulis Feature</h6>
+      	  <a class="collapse-item" href="/api/nulis?kata=OLA ME CHAMO MISTIC">Nulis</a>
+      	</div>
+      </div>
+      </li>
+      <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEntern" aria-expanded="true" aria-controls="collapseTable">
+                    <i class="fa fa-fw fa-smile"></i>
+                    <span>Entertainment</span>
+                </a>
+                <div id="collapseEntern" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Entertainment</h6>
+                        <a class="collapse-item" target="_blank" href="/api/namaninja?nama=MISTIC">Generate Nama Ninja</a>
+                        <a class="collapse-item" target="_blank" href="/api/simi?text=hallo simi">SimSimi</a>
+                    </div>
+                </div>
+            </li>
+      <!--li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOther" aria-expanded="true" aria-controls="collapseTable">
+                    <i class="fa fa-fw fa-feather-alt"></i>
+                    <span>Other</span>
+                </a>
+                <div id="collapseOther" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Other</h6>
+                        <a class="collapse-item" target="_blank" rel="nofollow" href="/api/shorturl?link=https://ferdiz-api.herokuapp.com/api">Shortlink 1</a>
+                        <!--a class="collapse-item" target="_blank" rel="nofollow" href="/api/shortlink2?url=https://google.com">Shortlink 2</a>
+                        <a class="collapse-item" target="_blank" rel="nofollow" href="/api/stalktiktok/username">Stalk Tiktok</a>
+                        <a class="collapse-item" target="_blank" rel="nofollow" href="/api/stalkig/username">Stalk Instagram</a>
+                        <a class="collapse-item" target="_blank" rel="nofollow" href="/api/ssweb?url=https://google.com">SS Web</a>
+                    </div>
+                </div>
+            </li-->
+      <li class="nav-item">
+      	<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOthers" aria-expanded="true"
+      	  aria-controls="collapseOthers">
+      	  <i class="fas fa-fw fa-leaf"></i>
+      	  <span>Others API</span>
+      	</a>
+      	<div id="collapseOthers" class="collapse" aria-labelledby="headingOthers" data-parent="#accordionSidebar">
+      	  <div class="bg-white py-2 collapse-inner rounded">
+      	    <h6 class="collapse-header">Others Features</h6>
+      	    <!--a class="collapse-item" >SamiSami</a>
+      	    <a class="collapse-item" href="/api/cuaca">Info Cuaca</a-->
+      	    <a class="collapse-item" href="/api/infogempa">Info Gempa</a>
+      	    <a class="collapse-item" href="/api/bpk?text=sayang">bapak font</a>
+      	    <!--a class="collapse-item" href="/api/shorturl?link=https://ferdiz-api.herokuapp.com/api">Shortlink</a>
+      	    <a class="collapse-item" href="/api/jadwalshalat">Jadwal shalat</a>
+      	    <a class="collapse-item" href="/api/jdtv">Jadwal TV</a>
+      	    <a class="collapse-item" href="/api/url2image">Url To Image</a>
+      	    <a class="collapse-item" href="/api/text2image">Text To Image</a-->
+      	  </div>
+      	</div>
+      </li>
+      <li class="nav-item">
+      	<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseInfo" aria-expanded="true" aria-controls="collapseTable">
+      	  <i class="fas fa-fw fa-info"></i>
+      	  <span>infomation</span>
+      	</a>
+      	<div id="collapseInfo" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
+      	  <div class="bg-white py-2 collapse-inner rounded">
+      	    <h6 class="collapse-header">Information Features</h6>
+      	    <!--a class="collapse-item" >SamiSami</a>
+      	    <a class="collapse-item" href="/api/cuaca">Info Cuaca</a-->
+      	    <a class="collapse-item" href="/api/lirik?judul=sayang">lirik lagu</a>
+            <a class="collapse-item" href="/api/artimimpi?mimpi=di cium">artimimpi</a>
+      	    <!--a class="collapse-item" href="/api/shorturl?link=https://ferdiz-api.herokuapp.com/api">Shortlink</a>
+      	    <a class="collapse-item" href="/api/jadwalshalat">Jadwal shalat</a>
+      	    <a class="collapse-item" href="/api/jdtv">Jadwal TV</a>
+      	    <a class="collapse-item" href="/api/url2image">Url To Image</a>
+      	    <a class="collapse-item" href="/api/text2image">Text To Image</a-->
+      	  </div>
+      	</div>
+      <!--li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCheck" aria-expanded="true"
+        aria-controls="collapseCheck">
+        <i class="fas fa-fw fa-check"></i>
+        <span>Check Limit Api</span>
+        </a>
+        <div id="collapseCheck" class="collapse" aria-labelledby="headingCheck" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Check Limit</h6>
+            <a class="collapse-item" href="/checklimit?apiKey=apikey">Check in here</a>
+          </div>
+        </div>
+      </li-->
+      <hr class="sidebar-divider">
+      <div class="sidebar-heading">
+        Contact me
+      </div>
+      <li class="nav-item">
+            <a class="nav-link collapsed" href="https://wa.me/555399726611">
+            <i class="fab fa-fw fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+            </a>
+      </li>
+      <li class="nav-item">
+            <a class="nav-link collapsed" href="https://github.com/">
+            <i class="fab fa-fw fa-github"></i>
+                    <span>Github</span>
+            </a>
+      </li>
+      <li class="nav-item">
+            <a class="nav-link collapsed" href="https://instagram.com/lsr.xl">
+            <i class="fab fa-fw fa-instagram"></i>
+                    <span>Instagram</span>
+            </a>
+      </li>
+      <hr class="sidebar-divider">
+      <div class="version"><b>Version 1.00</b></div>
+    </ul>
+    <!-- Sidebar -->
+    <div id="content-wrapper" class="d-flex flex-column">
+      <div id="content">
+        <!-- TopBar -->
+        <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top bg-gradient-danger">
+          <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+          <ul class="navbar-nav ml-auto">
+            
+            <!--<li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" id="ApiKeyDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-check fa-fw"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                aria-labelledby="ApiKeyDropdown">
+                <form action="/checklimit">
+                  <div class="input-group">
+                    <input type="text" class="form-control bg-light border-1 small" placeholder="Your Apikey"
+                      aria-label="ApiKey" aria-describedby="basic-addon2" style="border-color: #3f51b5;" name="apiKey" required>
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="button">Check
+                        <i class="fas fa-check fa-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>-->
+            <div class="topbar-divider d-none d-sm-block"></div>
+<li class="nav-item dropdown no-arrow mx-1">
+<a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="alertsDropdown" role="button">
+<i class="fas fa-bell fa-fw"></i>
+<span class="badge badge-danger badge-counter">4</span>
+</a>
+<div aria-labelledby="alertsDropdown" class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in">
+<h6 class="dropdown-header">
+                  PENGUMUMAN
+                </h6>
+<a class="dropdown-item d-flex align-items-center">
+<div class="mr-3">
+<div class="icon-circle bg-primary">
+<i class="fas fa-file-alt text-white"></i>
+</div>
+</div>
+<div>
+<div class="small text-gray-500">Januari 23, 2021</div>
+document learn my rest api
+</div>
+</a>
+<a class="dropdown-item d-flex align-items-center">
+<div class="mr-3">
+<div class="icon-circle bg-warning">
+<i class="fas fa-exclamation-triangle text-white"></i>
+</div>
+</div>
+<div>
+<div class="small text-gray-500">Januari 23, 2021</div>
+Laporkan jika ada kesalahan pada website ini ke Admin
+</div>
+</a>
+<a class="dropdown-item d-flex align-items-center" href="#">
+<div class="mr-3">
+<div class="icon-circle bg-success">
+<i class="fas fa-donate text-white"></i>
+</div>
+</div>
+<div>
+<div class="small text-gray-500">December 7, 2019</div>
+$ DONASI ke saya agar web ini bisa berkembang
+</div>
+</a>
+<a class="dropdown-item d-flex align-items-center" href="#">
+<div class="mr-3">
+<div class="icon-circle bg-warning">
+<i class="fas fa-podcast text-white"></i>
+</div>
+</div>
+<div>
+<div class="small text-gray-500">Januari 23, 2021</div>
+spesial Thanks template web mhankbarbar
+</div>
+</a>
+<!-- <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a> -->
+</div>
+</li>
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <img class="img-profile rounded-circle" src="https://i.ibb.co/kqzHHPF/images-1.jpg" style="max-width: 100px">
+                <span class="ml-2 d-none d-lg-inline text-white small">.....</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="/profile" target="_blank">
+                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-1000"></i>
+                  Profile
+                </a>
+                <!--a class="dropdown-item">
+                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Settings
+                </a>
+                <a class="dropdown-item">
+                  <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Activity Log
+                </a-->
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <!-- Container Fluid-->
+        <!--div class="container-fluid" id="container-wrapper"-->
+          <!--div class="text-center">
+            <img src="https://i.ibb.co/6WttpJV/20200629-113248.png" style="max-height: 300px;" class="mb-3">
+            <h3 class="text-gray-800 font-weight-bold">Oopss!</h3>
+            <p class="lead text-gray-800 mx-auto">404 Page Not Found</p>
+            <a href="index.html">&larr; Back to Dashboard</a>
+          </div-->
+		<section class="section">
+	        <div class="container">
+	            <div class="columns">
+	                <div class="column is-offset-4 is-4">
+	                   
+	                </div>
+	            </div>
+	        </div>
+	    </section>
+	    <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center w-100">
+      <div id="toast3"class="toast" class="alert alert-danger alert-dismissible" role="alert" aria-live="assertive" aria-atomic="true" data-delay="700">
+      <div id="toast4" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="false">
+        <div class="toast-header">
+            <svg class="bd-placeholder-img rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#1de9b6"></rect></svg>
+            <strong class="mr-auto">UPDATE </strong>
+            <small> </small>
+            <button type="button" class="ml-4 mb-2 close" data-dismiss="toast" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+        </div>
+        <div class="toast-body">
+          <h6>Halo gays ini adalah list update terbaru<h6>
+            • Arti mimpi <br>
+            • simi <br> 
+            • Bpk font <br>
+            • lirik lagu <br>
+            • nulis <br>
+            • nama ninja/Jepang <br>
+            • translate 
+        </div>
+    </div>
+</div>
+</div>
+<br>
+
+        <!-- Container Fluid-->
+        <!-- Container Fluid-->
+        <div class="container-fluid" id="container-wrapper">
+          <!-- Attention -->
+          <div id="demo" class="alert alert-danger alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span id="demo" aria-hidden="true"></span>
+            </button>
+            
+        <script>
+arrBulan = ["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
+var d = new Date();
+const jam = d.getHours();
+const menit = d.getMinutes();
+const detik = d.getSeconds();
+const tgl = d.getDate();
+const bln = d.getMonth();
+const thn = d.getFullYear();
+const bulan = arrBulan[bln];
+if (menit >= 0 && menit <= 9){
+	menitt = "0" + menit;
+} else if (menit >= 10 && menit <= 59) {
+	menitt = menit;
+}
+var txt = "";
+txt += "<p>  <b>Jam</b>: " + jam + ":" + menitt;
+txt += "<p>  <b>Tanggal</b>: " + tgl + " " + bulan + " " + thn;
+//txt += "<p>  <b>Nama Browser</b>: " + navigator.appCodeName + "</p>";
+//txt += "<p>  <b>Nama Code Browser</b>: " + navigator.appName + "</p>";
+//txt += "<p>  <b>Platform</b>: " + navigator.platform + "</p>";
+txt += "<p>  <b>User-Agent</b>: " + navigator.userAgent + "</p>";
+document.write(txt)
+</script>
+        <!--script>
+arrBulan = ["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
+var txt = "";
+txt += "<p><b>Browser CodeName</b>: " + navigator.appCodeName + "</p>";
+txt += "<p><b>Browser Name</b>: " + navigator.appName + "</p>";
+txt += "<p><b>Cookies Enabled</b>: " + navigator.cookieEnabled + "</p>";
+txt += "<p><b>Browser Online</b>: " + navigator.onLine + "</p>";
+txt += "<p><b>Platform</b>: " + navigator.platform + "</p>";
+txt += "<p><b>User-Agent</b>: " + navigator.userAgent + "</p>";
+var d = new Date();
+const jam = d.getHours();
+const menit = d.getMinutes();
+const detik = d.getSeconds();
+const tgl = d.getDate();
+const bln = d.getMonth();
+const thn = d.getFullYear();
+const bulan = arrBulan[bln]
+/* if (jam > 1 && jam < 11) {
+*	view.innerHTML = 'Selamat pagi :)';
+* } else if (jam > 11 && < 15) {
+*	view.innerHTML = 'Selamat siang :)';
+* } else if (jam > 15 && < 18) {
+*	view.innerHTML = 'Selamat sore :)';
+* } else if (jam > 18 && < 24) {
+*	view.innerHTML = 'Selamat malam'
+* } else {
+*	view.innerHTML = 'Selamat datang:)'
+* }
+*/
+document.write(txt)
+document.write("Date : "+ jam +":"+ menit +":"+ detik +"~"+ tgl +"-"+ bulan +"-"+ thn +"<br>Welcome back!")</script-->
+</div>
+<style>
+.animated {
+	background: #f0f0f0;
+	color: #F00;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	font-size: 25px;
+	font-family: Arial Black, Gadget, sans-serif;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #FF0000;
+	-webkit-animation: animatedBackground_c 2s infinite alternate;
+}
+
+@keyframes animatedBackground_c {
+	0% {-webkit-text-stroke-color: #ff8b00}
+	10% {-webkit-text-stroke-color: #e8ff00}
+	20% {-webkit-text-stroke-color: #5dff00}
+	30% {-webkit-text-stroke-color: #00ff2e}
+	40% {-webkit-text-stroke-color: #00ffb9}
+	50% {-webkit-text-stroke-color: #00b9ff}
+	60% {-webkit-text-stroke-color: #002eff}
+	70% {-webkit-text-stroke-color: #5d00ff}
+	80% {-webkit-text-stroke-color: #e800ff}
+	90% {-webkit-text-stroke-color: #ff008b}
+	100% {-webkit-text-stroke-color: #ff0000}
+}
+</style>
+<style>
+.mengetik
+{
+	font-size: 15px;
+	width: 250px;
+	white-space:nowrap;
+	overflow:hidden;
+	-webkit-animation: ketik 5s steps(50, end);
+	animation: ketik 5s steps(5000, end);
+}
+
+@keyframes ketik{
+		from { width: 0; }
+}
+
+@-webkit-keyframes ketik{
+		from { width: 0; }
+}
+</style>
+<div class="row mb-3">
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">TOTAL FITUR</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">20 FITUR</div>
+                      <div class="mt-2 mb-0 text-muted text-xs">
+                        <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
+                        <span>Jarang Update</span>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-calendar fa-2x text-primary"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Earnings (Annual) Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">DOAR AO ADMINISTRADOR</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">BRL.0</div>
+                      <div class="mt-2 mb-0 text-muted text-xs">
+                        <span class="text-danger mr-2"><i class="fas fa-arrow-down"></i> 0.00%</span>
+                        <span>Doe para suporte</span>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-donate fa-2x text-success"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- New User Card Example -->
+            <!--div class="col-xl-3 col-md-6 mb-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">New User</div>
+                      <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">366</div>
+                      <div class="mt-2 mb-0 text-muted text-xs">
+                        <span class="text-success mr-2"><i class="fas fa-arrow-up"></i> 20.4%</span>
+                        <span>Since last month</span>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-users fa-2x text-info"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div-->
+            <!-- Pending Requests Card Example -
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">Pending Requests</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                      <div class="mt-2 mb-0 text-muted text-xs">
+                        <span class="text-danger mr-2"><i class="fas fa-arrow-down"></i> 1.10%</span>
+                        <span>Since yesterday</span>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-comments fa-2x text-warning"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div-->
+                        </div>
+   
+      
+   
+          <!-- Attention --
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="card mb-4">
+                <!--center>   <h1 class="animated">HALLO GAYS<br></h1> </center--
+                <div class="card-header py-1 d-flex flex-row align-items-center justify-content-between">
+                </div>
+                <!--div class="card-body">
+                  <h6 class="m-0 font-weight-bold text-warning">
+                  support me by donate:
+                  </h6>
+                  <br>
+                  <a class="btn btn-info btn-icon-split" href="https://link.dana.id/qr/26sifccg" target="_blank">
+                  <span class="icon text-white-50">
+                  <i class="fas fa-money-bill">
+                  </i>
+                  </span>
+                  <span class="text">
+                  DANA
+                  </span>
+                  </a>
+                  <a class="btn btn-success btn-icon-split" href="https://wa.me/+6287877173955?text=kak+saya+mau+donasi+pulsa" target="_blank">
+                  <span class="icon text-white-50">
+                  <i class="fas fa-credit-card" aria-hidden="true">
+                  </i>
+                  </span>
+                  <span class="text">
+                  Pulsa
+                  </span>
+                  </a>
+                  <br>
+                  <br>
+                  <h6 class="m-0 font-weight-bold text-warning">
+                  Sosial Media:
+                  </h6>
+                  <br>
+                  <a class="btn btn-danger btn-icon-split" href="https://instagram.com/ferdiz_afk" target="_blank">
+                  <span class="icon text-white-50">
+                  <i class="fab fa-instagram">
+                  </i>
+                  </span>
+                  <span class="text">
+                  Instagram
+                  </span>
+                  </a>
+                  
+                  <!--a class="btn btn-warning btn-icon-split" href="#" target="_blank">
+                  <span class="icon text-white-50">
+                  <i class="fab fa-github">
+                  </i>
+                  </span>
+                  <span class="text">
+                  Github
+                  </span>
+                  </a>
+                  <br>
+                  <!--a class="btn btn-warning btn-icon-split" href="https://www.kocakz.xyz" target="_blank">
+                  <span class="icon text-white-50">
+                  <i class="fas fa-rss" aria-hidden="true">
+                  </i>
+                  </span>
+                  <span class="text">
+                  Blog
+                  </span>
+                  </a>
+                  <div class="alert alert-success" role="alert">
+                  <!--h4 class="alert-heading">I LOVE YOU</h4>
+                  </div>
+              </div--
+            </div>
+          </div>
+          </div>
+          
+          --Row-->
+          
+			<!-- Attention -->
+			<div class="row">
+			<div class="col-lg-6">
+			<div class="card mb-4">
+<div class="card-header bg-warning py-3 d-flex flex-row align-items-center justify-content-between">
+			<h6 class="m-0 font-weight-bold text-white">INFORMATION</h6>
+			</div>
+			<div class="card-body">
+			<h6><b>Admin :</b> <a href="https://instagram.com/lsr.xl">MISTIC</a>
+			<h6><br>Este site é apenas para eu aprender sobre API ^ _ ^ 🙏<br>Bem como aprender a fazer web design.<br>Desculpe, se ainda houver algum <b>bug / error.</b><br> Entre em contato com o administrador via WhatsApp!!</a><br>
+			<h6><br>SPESIAL Thanks : <br>• <a href="https://github.com/indrijunanda/RuangAdmin">ruang admin</a><br> •<a href="https://www.heroku.com"> Heroku</a><br>•<a href="https://github.com/FERDIZ-afk"> Ferdiz-afk</a><br>• internet gratis</a><br>
+			<h6><br>Se você encontrar um bug <i class="fa fa-bug"></i> reportar diretamente para <a href="https://wa.me/555399726611">Eu</a> Oke!</h6>
+			</div>
+			</div>
+			</div>
+			</div>
+			
+			
+			
+			
+			
+			<!--Row-->
+          <!-- Modal Logout -->
+          <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelLogout"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabelLogout">Ohh No!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Are you sure you want to logout?</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+                  <a href="login.html" class="btn btn-primary">Logout</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <!---Container Fluid-->
+      </div>
+      <!-- Footer -->
+      <footer class="sticky-footer bg-gradient-danger">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>copyright &copy; <script> 
+
+document.write(new Date().getFullYear()); 
+</script> -
+              <b><a href="https://wa.me/6287877173955/" target="_blank">FERDIZ-AFK</a></b>
+            </span>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer -->
+    </div>
+  </div>
+
+  <!-- Scroll to top -->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <script src="https://indrijunanda.github.io/RuangAdmin/vendor/jquery/jquery.min.js"></script>
+  <script src="https://indrijunanda.github.io/RuangAdmin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://indrijunanda.github.io/RuangAdmin/vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="https://indrijunanda.github.io/RuangAdmin/js/ruang-admin.min.js"></script>
+<script>
+    $(document).ready(function(){
+      $('.toast').toast('show')
+    });
+</script>
+	
+</body>
+
+</html>
